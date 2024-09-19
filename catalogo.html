@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/img/logo/favicon.png" type="image/x-icon">
+  <title>Estilo Urbano</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .container-main {
+      margin-top: 8rem;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 30px;
+      height: 520px;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-top {
+      height: 300px;
+      object-fit: cover;
+
+    }
+
+    .card-body {
+      padding: 30px;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      font-size: 0.875rem;
+      color: #6c757d;
+    }
+
+    .btn-primary {
+      margin-top: 10px;
+    }
+
+
+    /* Estilos navbar */
+    .logo-navbar {
+      width: 200px;
+    }
+
+    /* -------------- */
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/img/logo/logo-dark.png" alt="logo-dark" class="logo-navbar">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
+          </li>
+        </ul>
+        <a href="login.html" class="btn btn-dark" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-user">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+          </svg>
+          <span style="line-height: 0em;">Iniciar sesión</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container container-main">
+    <div class="row">
+
+      <div class="col-md-6 col-lg-3">
+        <!--tarjeta 1-->
+        <div class="card">
+          <img src="https://i.pinimg.com/564x/87/be/cb/87becbcbca771f4f05f4bdffab5e3a0b.jpg" class="card-img-top"
+            alt="Pantalón camuflado en jean">
+          <div class="card-body">
+            <h5 class="card-title">Pantalón Camuflado</h5>
+            <p class="card-text">Pantalón camuflado en jean, bota ancha, ligero. Disponible en todas las tallas. $78.000
+            </p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal"
+              data-bs-whatever="Pantalón Camuflado">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <!--tarjeta 2-->
+        <div class="card">
+          <img src="https://i.pinimg.com/564x/3e/68/67/3e68673493c0d7685adf3d26e9375096.jpg" class="card-img-top"
+            alt="Conjunto camiseta y short">
+          <div class="card-body">
+            <h5 class="card-title">Camiseta y Pantaloneta</h5>
+            <p class="card-text">Conjunto de camiseta y pantaloneta en algodón verde manzana. Tallas disponibles.
+              $80.000</p>
+
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal"
+              data-bs-whatever="Conjunto Camiseta y Pantaloneta">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <!--tarjeta 3-->
+        <div class="card">
+          <img src="https://i.pinimg.com/564x/4a/7b/aa/4a7baa5d83d878e81b58c06ed54592d8.jpg" class="card-img-top"
+            alt="Gorra New York Yankees">
+          <div class="card-body">
+            <h5 class="card-title">Gorra New York Yankees</h5>
+            <p class="card-text">Gorra New York Yankees negra con logo en negro, con visera plana. $70.000.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal"
+              data-bs-whatever="Gorra New York Yankees">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <!--tarjeta 4-->
+        <div class="card">
+          <img src="./assets/img/productos/1.webp" class="card-img-top" alt="Vestido casual de flores">
+          <div class="card-body">
+            <h5 class="card-title">Nautica</h5>
+            <p class="card-text">Camiseta Azul Navy-Blanco Nautica $82.900</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal"
+              data-bs-whatever="Vestido floreado">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <!--tarjeta 4-->
+        <div class="card">
+          <img src="https://i.pinimg.com/564x/dd/a2/29/dda229389d4fccca65721952dffe1a4d.jpg" class="card-img-top"
+            alt="Vestido casual de flores">
+          <div class="card-body">
+            <h5 class="card-title">Vestido floreado</h5>
+            <p class="card-text">Vestido con estampado de flores en tono morado, con bolero en la falda. Disponible en
+              todas las tallas. $90.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal"
+              data-bs-whatever="Vestido floreado">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <!--tarjeta 4-->
+        <div class="card">
+          <img src="./assets/img/productos/2.webp" class="card-img-top" alt="Vestido casual de flores">
+          <div class="card-body">
+            <h5 class="card-title">Tommy Hilfiger</h5>
+            <p class="card-text">Chaqueta Azul Con Cuello Estampado De Rayas Para Mujer Tommy Hilfiger $563.900</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal"
+              data-bs-whatever="Vestido floreado">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <!--tarjeta 4-->
+        <div class="card">
+          <img src="./assets/img/productos/3.webp" class="card-img-top" alt="Vestido casual de flores">
+          <div class="card-body">
+            <h5 class="card-title">Rutta</h5>
+            <p class="card-text">Chaqueta Mujer Azul Rutta 102244 $79.100</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal"
+              data-bs-whatever="Vestido floreado">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <!--tarjeta 4-->
+        <div class="card">
+          <img src="./assets/img/productos/4.webp" class="card-img-top" alt="Vestido casual de flores">
+          <div class="card-body">
+            <h5 class="card-title">Totto</h5>
+            <p class="card-text">Chaqueta Para Mujer Rosada Maxim $174.900</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal"
+              data-bs-whatever="Vestido floreado">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Añadir al Carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="productDescription" class="form-label">Descripción</label>
+              <input type="text" class="form-control" id="productDescription" readonly>
+            </div>
+            <div class="mb-3">
+              <label for="productColor" class="form-label">Color</label>
+              <input type="text" class="form-control" id="productColor">
+            </div>
+            <div class="mb-3">
+              <label for="productQuantity" class="form-label">Cantidad</label>
+              <input type="number" class="form-control" id="productQuantity" value="1">
+            </div>
+            <div class="mb-3">
+              <label for="productSize" class="form-label">Talla</label>
+              <select class="form-select" id="productSize">
+                <option selected>Seleccionar talla</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Añadir al carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
